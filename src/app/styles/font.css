@@ -1,46 +1,6 @@
-@font-face {
-  font-family: 'Okticon';
-  src: url('/fonts/okticon.ttf') format('truetype');
-  font-style: normal;
-  font-display: swap;
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: 'Pretendard';
-  src: url('/fonts/Pretendard-Black.woff2') format('woff2');
-  font-style: normal;
-  font-display: swap;
-  font-weight: 900;
-}
-@font-face {
-  font-family: 'Pretendard';
-  src: url('/fonts/Pretendard-Bold.woff2') format('woff2');
-  font-style: normal;
-  font-display: swap;
-  font-weight: 700;
-}
-@font-face {
-  font-family: 'Pretendard';
-  src: url('/fonts/Pretendard-Medium.woff2') format('woff2');
-  font-style: normal;
-  font-display: swap;
-  font-weight: 500;
-}
-@font-face {
-  font-family: 'Pretendard';
-  src: url('/fonts/Pretendard-Regular.woff2') format('woff2');
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-}
-
-@layer base {
-  html {
-    font-family: 'Pretendard', sans-serif;
-    font-weight: 400;
-    color: var(--color-black);
-  }
+@theme inline {
+  --font-pretendard: var(--font-pretendard);
+  --font-okticon: var(--font-okticon);
 }
 
 @layer utilities {

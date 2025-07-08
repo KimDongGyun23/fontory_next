@@ -1,7 +1,7 @@
 @layer base {
   input,
   textarea {
-    @apply font-input-value w-full resize-none rounded-xl border border-[var(--color-grey)] bg-transparent px-6 py-5 outline-none;
+    @apply w-full resize-none rounded-xl border border-[var(--color-grey)] bg-transparent px-6 py-5 outline-none;
   }
   input:focus,
   textarea:focus {
