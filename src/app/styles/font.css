@@ -1,0 +1,149 @@
+@font-face {
+  font-family: 'Okticon';
+  src: url('/fonts/okticon.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/fonts/Pretendard-Black.woff2') format('woff2');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/fonts/Pretendard-Bold.woff2') format('woff2');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/fonts/Pretendard-Medium.woff2') format('woff2');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/fonts/Pretendard-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+
+@layer base {
+  html {
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 400;
+    color: var(--color-black);
+  }
+}
+
+@layer utilities {
+  .font-logo {
+    @apply text-primary font-[Okticon] text-[3rem] font-bold;
+  }
+  .font-navigation {
+    @apply text-[1.5rem] font-bold;
+  }
+  .font-pagination {
+    @apply text-[2rem] font-bold;
+  }
+  .font-search {
+    @apply text-[1.5rem] font-bold;
+  }
+  .font-filter {
+    @apply text-[2rem] font-bold;
+  }
+  .font-step {
+    @apply text-[2rem] font-bold;
+  }
+  .font-dropdown {
+    @apply text-[1.25rem] font-normal;
+  }
+  .font-footer {
+    @apply text-[1rem] font-normal;
+  }
+  .font-preview {
+    @apply text-[3rem];
+  }
+  .font-preview-metadata {
+    @apply text-[1.75rem] font-bold;
+  }
+  .font-page-title {
+    @apply text-[5.75rem] font-bold;
+  }
+  .font-page-description {
+    @apply text-[1.25rem] font-medium;
+  }
+  .font-primary-button {
+    @apply text-[1.75rem] font-bold;
+  }
+  .font-secondary-button {
+    @apply text-[1.5rem] font-bold;
+  }
+  .font-action-button {
+    @apply text-[1.75rem] font-bold;
+  }
+  .font-input-label {
+    @apply text-[1.75rem] font-bold;
+  }
+  .font-input-value {
+    @apply text-[1.5rem] font-normal;
+  }
+  .font-popular-example {
+    @apply text-[2.25rem] leading-[3.6875rem] font-normal;
+  }
+  .font-popular-writer {
+    @apply text-[1.5rem] font-normal;
+  }
+  .font-progress-label {
+    @apply text-[1.75rem] font-bold;
+  }
+  .font-progress-value {
+    @apply text-[1.75rem] font-normal;
+  }
+  .font-main-title {
+    @apply text-[5.5rem] font-bold;
+  }
+  .font-main-subtitle {
+    @apply text-[5rem] font-bold;
+  }
+  .font-main-description {
+    @apply text-[2rem] font-bold;
+  }
+  .font-main-card-title {
+    @apply text-[1.75rem] font-bold;
+  }
+  .font-main-card-description {
+    @apply text-[1.25rem] font-bold;
+  }
+  .font-main-more {
+    @apply text-[2rem] font-bold;
+  }
+  .font-detail-title {
+    @apply text-[5rem] font-bold;
+  }
+  .font-detail-writer {
+    @apply text-[2.5rem] font-bold;
+  }
+  .font-detail-label {
+    @apply text-[2.5rem] font-bold;
+  }
+  .font-detail-meta-label {
+    @apply text-[1.5rem] font-medium;
+  }
+  .font-detail-meta-value {
+    @apply text-[1.5rem] font-bold;
+  }
+  .font-term-check {
+    @apply text-[1.75rem] font-normal;
+  }
+  .font-term-description {
+    @apply text-[1.75rem] font-normal;
+  }
+}

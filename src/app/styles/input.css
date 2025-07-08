@@ -1,0 +1,15 @@
+@layer base {
+  input,
+  textarea {
+    @apply font-input-value w-full resize-none rounded-xl border border-[var(--color-grey)] bg-transparent px-6 py-5 outline-none;
+  }
+  input:focus,
+  textarea:focus {
+    @apply border border-[var(--color-darkgrey)] bg-transparent outline-none;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    @apply font-[var(--color-darkgrey)];
+  }
+}
