@@ -1,4 +1,6 @@
 export * from './cn'
 export * from './formatInput'
 export * from './formatIsoToDateTime'
+export * from './loadFont'
+export * from './paginationManager'
 export * from './restrictInputChars'

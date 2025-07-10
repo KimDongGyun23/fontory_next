@@ -1,17 +1,18 @@
-type FilterType = 'english' | 'number' | 'korean' | 'alphanumeric' | 'custom'
+type FilterType = 'english' | 'number' | 'korean' | 'alphanumeric' | 'custom' | 'all'
 
 const FILTER_PATTERNS: Record<Exclude<FilterType, 'custom'>, RegExp> = {
   english: /^[a-zA-Z]$/,
   number: /^[0-9]$/,
   korean: /^[가-힣]$/,
   alphanumeric: /^[a-zA-Z0-9]$/,
+  all: /^[\s\S]$/,
 }
 
-type FnType = (input: string, maxLength: number, type: FilterType, customPattern?: RegExp) => string
+type FnType = (input: string, maxLength: number, type?: FilterType, customPattern?: RegExp) => string
 /**
  * 입력 문자열을 필터 타입에 맞게 필터링하고 최대 길이만큼 자르는 유틸 함수
  */
-export const restrictInputChars: FnType = (input, maxLength, type = 'custom', customPattern) => {
+export const restrictInputChars: FnType = (input, maxLength, type = 'all', customPattern) => {
   const pattern = type === 'custom' ? customPattern : FILTER_PATTERNS[type]
 
   if (!pattern) {
