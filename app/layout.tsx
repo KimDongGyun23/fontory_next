@@ -1,5 +1,6 @@
 import { type ReactNode } from 'react'
 
+import { TanstackQueryProvider } from '@/src/app/provider'
 import { pretendard } from '@/src/app/styles/font'
 
 import '../src/app/styles/index.css'
@@ -12,8 +13,7 @@ export default function RootLayout({
   return (
     <html lang="ko" className={pretendard.className}>
       <body>
-        <div className="text-red-500">hi</div>
-        {children}
+        <TanstackQueryProvider>{children}</TanstackQueryProvider>
       </body>
     </html>
   )
